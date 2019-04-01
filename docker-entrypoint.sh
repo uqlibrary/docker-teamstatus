@@ -10,5 +10,5 @@ if [ ! -f /www/teamstatus/teamstatus.sqlite3 ]; then
     cp /www/teamstatus/teamstatus.sqlite3.default /www/teamstatus/teamstatus.sqlite3
 fi
 
-chown www-data:www-data /www/teamstatus/teamstatus.sqlite3
+chown -R www-data:www-data /www/teamstatus/
 exec /usr/sbin/apache2ctl -D FOREGROUND
